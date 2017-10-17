@@ -5,7 +5,8 @@ This is upgraded example based on [Basic IoT scenario lab in Introduction to inf
 ## Prerequisites
 * A WeMos Lolin32 microcontroller with at least one color led
 * [pip](https://pip.pypa.io/en/stable/)
-* picocom and wget (Linux has them by default. On OS X you need [Homebrew](https://brew.sh/) to install picocom by: ``brew install picocom``)
+* picocom ``sudo apt-get install picocom``. On OS X you need [Homebrew](https://brew.sh/) to install picocom by: ``brew install picocom``)
+* wget ``sudo apt-get install wget``. On OS X ``brew install wget``
 * [Silabs VCP driver](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) for OS X
 * esptool ``pip install esptool``
 * Adafruit-ampy ``pip install adafruit-ampy``
