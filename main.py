@@ -23,17 +23,17 @@ Content-Type: text/html
 </html>
 """
 
-def toggle_red():
+def toggle_red(): # defines color red
     led_RED.value(1 - led_RED.value())
 
-def toggle_green():
+def toggle_green(): # defines color green
     led_GREEN.value(1 - led_GREEN.value())
 
-def toggle_blue():
+def toggle_blue(): # defines color blue
     led_BLUE.value(1 - led_BLUE.value())
 
 
-def main():
+def main(): # greates socket connection
     s = socket.socket()
     ai = socket.getaddrinfo(wlan.ifconfig()[0], 8080)
     print("Bind address info:", ai)
@@ -44,10 +44,8 @@ def main():
     s.listen(5)
     print("Listening, connect your browser to http://10.59.1.166:8080/")
 
-    l = [toggle_red(), toggle_green(), toggle_blue()]
-
     counter = 0
-    while True:
+    while True: 
         sock, addr = s.accept()
         print("Client address:", addr)
         stream = sock.makefile("rwb")
@@ -55,11 +53,11 @@ def main():
         method, path, protocol = req.split(" ")
         print("Got", method, "request for")
 
-        if path == "/toggle_red":
+        if path == "/toggle_red": #if path == to red, it runs red
             toggle_red()
-        elif path == "/toggle_green":
+        elif path == "/toggle_green": #if path == to green, it runs green
             toggle_green()
-        elif path == "/toggle_blue":
+        elif path == "/toggle_blue": #if path == to blue, it runs blue
             toggle_blue()
 
 
