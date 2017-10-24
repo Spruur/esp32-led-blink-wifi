@@ -23,13 +23,13 @@ Content-Type: text/html
 </html>
 """
 
-def toggle_red(): # defines color red
+def toggle_red():
     led_RED.value(1 - led_RED.value())
 
-def toggle_green(): # defines color green
+def toggle_green():
     led_GREEN.value(1 - led_GREEN.value())
 
-def toggle_blue(): # defines color blue
+def toggle_blue():
     led_BLUE.value(1 - led_BLUE.value())
 
 
