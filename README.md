@@ -57,4 +57,10 @@ Different led colors:
 
 ![Pic of led](http://spruur.eu/dump/iot-led-blink-wifi-img/image3.JPG)
 
+## Contributors
+
+[Karl Hendrik Leppmets](https://github.com/Spruur)
+[Helena Ingermann](https://github.com/ingermhelena)
+[Anastasia Koleda](https://github.com/anastasiakoleda)
+
 
